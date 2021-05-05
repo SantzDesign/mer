@@ -1,0 +1,13 @@
+/* Mercedes De Vito */
+
+Designer and developer: Santiago Baigorria
+Contact: santiago [at] santz.co
+Twitter: @santzdesign
+Github: santzdesign
+Website: https://santz.co
+From: Benavídez, Argentina
+
+Last update: 2014/mm/dd
+Language: English
+Doctype: HTML5
+IDE: Sublime Text 3, Photoshop, Google PageSpeed Insights, GTMetrix, YUI Compressor, Yahoo! SmushIt, W3C Validator

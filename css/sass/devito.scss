@@ -1,0 +1,134 @@
+/*!
+ * Mercedes De Vito, made by Santz
+ *
+ * San Isidro, Argentina
+ * http://devito.me   mer@devito.me
+ *
+ * Santiago Baigorria
+ * https://santz.co   santiago@santz.co
+ */
+
+/*
+ * Bourbon
+ */
+
+  @import "bourbon/bourbon";
+
+/*
+ * Box Sizing
+ */
+
+  *, *:after, *:before {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    @include box-sizing(border-box);
+  }
+
+/*
+ * Normalize
+ */
+
+  @import "modules/normalize";
+
+/*
+ * Variables
+ */
+
+  $purple:                  #916abc;
+  $brand-color:             #4d4855;
+  $text-color:              #6b6673;
+  $text-color-light:        #938e9b;
+
+  $text-color:              $text-color;
+  $link-color:              $text-color;
+  $font-size:               18px;
+  $line-height:             1.4;
+  $serif-font-family:       'Crimson Text', serif;
+  $sans-serif-font-family:  'Quicksand', sans-serif;
+
+  $bold:                    700;
+  $semibold:                600;
+  $normal:                  400;
+  $light:                   300;
+
+  $body-bg:                 #fbfaf8;
+  $selection-bg:            #9878bb;
+  $selection-color:         #fff;
+
+  $transitions-timing:      0.3s;
+
+  $cursor-disabled:         not-allowed;
+
+/*
+ * Main
+ */
+
+  body {
+    font: $normal $font-size $serif-font-family;
+    line-height: $line-height;
+    color: $text-color;
+    background: $body-bg;
+    min-width: 320px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: $link-color;
+
+    @include transition(color $transitions-timing ease, background-color $transitions-timing ease, border-color $transitions-timing ease, opacity $transitions-timing ease, visibility $transitions-timing ease, transform $transitions-timing ease);
+  }
+
+  ::-moz-selection {
+    background: $selection-bg;
+    color: $selection-color;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: $selection-bg;
+    color: $selection-color;
+    text-shadow: none;
+  }
+
+/*
+ * Plugins
+ */
+
+  @import "plugins/modal.js";
+
+/*
+ * Modules
+ */
+
+  @import "modules/fonts";
+
+  @import "modules/assets";
+
+  @import "modules/grid";
+
+  @import "modules/type";
+
+  @import "modules/buttons";
+
+  @import "modules/forms";
+
+  @import "modules/sprite";
+
+/*
+ * Specifics
+ */
+
+  @import "parts/everything";
+
+/*
+ * Media
+ */
+
+  @import "modules/media";
+
+  @import "modules/retina";

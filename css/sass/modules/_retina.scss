@@ -1,0 +1,25 @@
+// @2x
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (   min--moz-device-pixel-ratio: 2),
+       only screen and (     -o-min-device-pixel-ratio: 2/1),
+       only screen and (        min-device-pixel-ratio: 2),
+       only screen and (                min-resolution: 192dpi),
+       only screen and (                min-resolution: 2dppx) {
+
+  .hero-border { background-image: url(../images/desktop-intro-border@2x.jpg); }
+  .hero-background { background-image: url(../images/desktop-intro@2x.jpg); }
+
+  .footer-background { background-image: url(../images/desktop-footer@2x.jpg); }
+}
+
+@media only screen and (max-width: 660px) and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (max-width: 660px) and (   min--moz-device-pixel-ratio: 2),
+       only screen and (max-width: 660px) and (     -o-min-device-pixel-ratio: 2/1),
+       only screen and (max-width: 660px) and (        min-device-pixel-ratio: 2),
+       only screen and (max-width: 660px) and (                min-resolution: 192dpi),
+       only screen and (max-width: 660px) and (                min-resolution: 2dppx) {
+
+  .hero-border { background-image: url(../images/mobile-intro-border@2x.jpg); }
+  .hero-background { background-image: url(../images/mobile-intro@2x.jpg); }
+}

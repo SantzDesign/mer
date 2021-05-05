@@ -1,0 +1,95 @@
+// Headings
+
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6 {
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1, .h1 {
+  font-family: $sans-serif-font-family;
+  font-weight: $normal;
+  font-size: 24px;
+  color: $brand-color;
+}
+
+h2, .h2 {
+  font-family: $sans-serif-font-family;
+  font-weight: $light;
+  font-size: 54px;
+  color: $brand-color;
+}
+
+h3, .h3 {
+  font-family: $serif-font-family;
+  font-weight: $normal;
+  font-style: italic;
+  font-size: 32px;
+}
+
+h4, .h4 { font-size: 16px; }
+
+h5, .h5 { font-size: 11px; }
+
+h6, .h6 { font-size: 10px; }
+
+// Paragraphs
+
+p { margin: 0; }
+
+.content {
+  font-style: italic;
+
+  p {
+    margin: 0 0 25px;
+
+    b { font-weight: $semibold; }
+  }
+
+  ul {
+    list-style: none;
+    padding: 2px 0 2px 40px;
+
+    li {
+      position: relative;
+
+      margin: 0 0 7px;
+
+      // &:last-child { margin: 0; }
+
+      &:before {
+        content: "-";
+        display: block;
+        @include position(absolute, -5px null null -20px);
+
+        font-style: normal;
+      }
+    }
+  }
+}
+
+// Links
+
+.a {
+  &.underline {
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      @include position(absolute, null 0 1px);
+      height: 1px;
+      background: #a9a7ac;
+      box-shadow: 0 1px 0 #dddbdc;
+    }
+  }
+
+  &.highlight {
+    color: #816abc;
+
+    &:before {
+      background: #b4a8d4;
+      box-shadow: 0 1px 0 #e0dceb;
+    }
+  }
+}

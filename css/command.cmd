@@ -1,0 +1,1 @@
+sass --watch sass/devito.scss:devito.css

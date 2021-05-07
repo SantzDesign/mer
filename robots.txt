@@ -20,4 +20,4 @@ User-agent: Mediapartners-Google*
 Disallow:
 Allow: /*
 
-Sitemap: http://devito.me/sitemap.xml
+Sitemap: https://devito.me/sitemap.xml
